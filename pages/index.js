@@ -78,7 +78,7 @@ export default function Home() {
                                 <p className="m-0 text-center text-2xl">
                                     Welcome to
                                 </p>
-                                <h1 className="text-center text-4xl text-brand">
+                                <h1 className="p-0 text-center text-4xl text-brand border-none">
                                     Pranami Vishwa Parishad
                                 </h1>
                             </div>
@@ -91,7 +91,7 @@ export default function Home() {
                             <p>
                                 A monthly magazine “Pranami Vishwa” is published by the Parishad. It contains short articles, discourses and details of activities being carried out- pertaining to the society, at various centers worldwide.
                             </p>
-                            <h2 className="mt-6 text-3xl pl-2 font-medium border-l-4 border-l-brand">
+                            <h2 className="mt-6 text-3xl font-medium">
                                 Shri Krishna Pranami Dharma - Nijanand Sect
                             </h2>
                             <p>

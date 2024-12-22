@@ -4,7 +4,7 @@ import { links, pages } from "../constants";
 
 export default function Footer() {
     return (
-        <footer className="mt-8 py-8 bg-footer text-text-secondary origin-top-left transition-all ease-out">
+        <footer className="mt-12 py-8 bg-footer text-text-secondary origin-top-left transition-all ease-out">
             <div className="container relative grid grid-cols-4 gap-8">
                 <div
                     className={classNames(
