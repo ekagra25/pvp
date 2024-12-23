@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 import { banners } from "../constants";
 import { theme } from "../tailwind.config";
@@ -12,21 +12,7 @@ let touchendX = 0;
 export default function Carousel() {
     const [active, setActive] = useState(0);
 
-    useEffect(() => {
-        document.querySelectorAll(".carousel-item").forEach((elem) => {
-            elem.style.left = `-${active * 100}%`;
-        });
-        triggerTimeout();
-    }, [active]);
-
-    const triggerTimeout = () => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-            changeActiveItem("next")();
-        }, 5000);
-    };
-
-    const changeActiveItem = (dir) => () => {
+    const changeActiveItem = useCallback((dir) => () => {
         setActive((active) => {
             let newActive = active;
             switch (dir) {
@@ -46,7 +32,21 @@ export default function Carousel() {
             }
             return newActive;
         });
-    };
+    }, []);
+
+    const triggerTimeout = useCallback(() => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            changeActiveItem("next")();
+        }, 5000);
+    }, [changeActiveItem]);
+
+    useEffect(() => {
+        document.querySelectorAll(".carousel-item").forEach((elem) => {
+            elem.style.left = `-${active * 100}%`;
+        });
+        triggerTimeout();
+    }, [active, triggerTimeout]);
 
     const touchStart = (e) => {
         touchstartX =

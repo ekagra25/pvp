@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
                 <div className={classNames("col-span-2", "sm:col-span-1")}>
                     {links.map((item, index) => (
-                        <dl className="mb-4">
+                        <dl key={index} className="mb-4">
                             <dt className="italic">{item.name}</dt>
                             <dd className="font-medium">
                                 <Link key={index} href={item.href}>

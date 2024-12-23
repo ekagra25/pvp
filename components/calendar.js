@@ -11,11 +11,15 @@ import {
     isSameDay,
     setMonth,
     startOfMonth,
+    parseISO,
+    isToday,
+    isSameMonth,
 } from "date-fns";
 import { useState } from "react";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 import { theme } from "../tailwind.config";
 import Select from "./select";
+import festivals from "../json/festivals.json";
 
 const now = Date.now();
 
@@ -37,6 +41,18 @@ const selectOptions = [
 export default function Calendar() {
     const [selectedDate, setSelectedDate] = useState(now);
 
+    const hasEvents = (date) => {
+        return festivals.some(event => {
+            const startDate = parseISO(event.startDate);
+            const endDate = parseISO(event.endDate);
+            return (
+                isSameDay(startDate, date) || 
+                (isAfter(date, startDate) && isBefore(date, endDate)) ||
+                isSameDay(endDate, date)
+            );
+        });
+    };
+
     const getTableBody = () => {
         const start = startOfMonth(selectedDate);
         const end = endOfMonth(selectedDate);
@@ -57,10 +73,11 @@ export default function Calendar() {
         }
 
         return result.map((week) => (
-            <tr className="flex justify-between mb-3">
+            <tr key={week} className="flex justify-between mb-3">
                 {week.map((date) => (
                     <td
-                        className="inline-bloxk relative w-full aspect-square pb-1.5"
+                        key={date}
+                        className="relative w-full aspect-square pb-1.5"
                         onClick={changeSelectedDate("date", date)}
                     >
                         {isSameDay(date, start) ||
@@ -71,8 +88,9 @@ export default function Calendar() {
                                     {
                                         "bg-brand text-white rounded-full":
                                             isSameDay(date, selectedDate),
+                                        "after:content-[''] after:absolute after:bottom-0 after:inline-block after:w-1 after:h-1 after:bg-brand-lightest after:rounded": 
+                                            hasEvents(date)
                                     },
-                                    "after:content-[''] after:absolute after:bottom-0 after:inline-block after:w-1 after:h-1 after:bg-brand-lightest after:rounded"
                                 )}
                             >
                                 {format(date, "d")}
@@ -109,6 +127,85 @@ export default function Calendar() {
         changeSelectedDate("month", val.value)();
     };
 
+    const renderEvent = (event) => {
+        const getLocations = (locations) => {
+            if (locations[0] === "everywhere") {
+                return "All places";
+            } else if (locations[locations.length - 1] === "everywhere") {
+                const mainLocations = locations.slice(0, -1);
+                // Return an array to handle different capitalizations
+                return [mainLocations.join(", "), " and all other places"];
+            }
+            return locations.join(", ");
+        };
+
+        const locations = getLocations(event.locations);
+
+        return (
+            <div key={event.id} className="relative mb-2.5 ml-2.5">
+                <div className="absolute -left-2.5 top-0 w-1 h-full bg-brand rounded-full" />
+                <div className="font-medium text-brand capitalize">{event.festival}</div>
+                <div className="text-sm">
+                    {format(parseISO(event.startDate), "d MMM")}
+                    {event.startDate !== event.endDate && 
+                        ` - ${format(parseISO(event.endDate), "d MMM")}`}
+                </div>
+                <div className="text-sm text-text-secondary">
+                    {Array.isArray(locations) ? (
+                        <>
+                            <span className="capitalize">{locations[0]}</span>
+                            <span>{locations[1]}</span>
+                        </>
+                    ) : (
+                        <span className="capitalize">{locations}</span>
+                    )}
+                </div>
+            </div>
+        );
+    };
+
+    const getSelectedDateEvents = () => {
+        const selectedDateEvents = festivals.filter(event => {
+            const startDate = parseISO(event.startDate);
+            const endDate = parseISO(event.endDate);
+            return (
+                isSameDay(startDate, selectedDate) || 
+                (isAfter(selectedDate, startDate) && isBefore(selectedDate, endDate)) ||
+                isSameDay(endDate, selectedDate)
+            );
+        });
+        
+        if (selectedDateEvents.length === 0) {
+            return <div className="text-text-secondary text-center">No events on {format(selectedDate, "d MMMM")}</div>;
+        }
+        
+        return selectedDateEvents.map(renderEvent);
+    };
+
+    const getUpcomingEvents = () => {
+        const today = new Date();
+        const oneMonthFromNow = add(today, { months: 1 });
+
+        const upcomingEvents = festivals.filter(event => {
+            const eventDate = parseISO(event.startDate);
+            return (
+                isAfter(eventDate, today) && 
+                isBefore(eventDate, oneMonthFromNow)
+            );
+        });
+
+        if (upcomingEvents.length === 0) {
+            return <div className="text-text-secondary">No upcoming events in the next 30 days</div>;
+        }
+
+        // Sort by start date
+        upcomingEvents.sort((a, b) => 
+            parseISO(a.startDate).getTime() - parseISO(b.startDate).getTime()
+        );
+
+        return upcomingEvents.map(renderEvent);
+    };
+
     return (
         <>
             <div className="inline-flex w-full justify-between items-center gap-2 mb-3">
@@ -137,8 +234,8 @@ export default function Calendar() {
             <table className="w-full text-center">
                 <thead className="w-full">
                     <tr className="flex justify-between mb-2">
-                        {["M", "T", "W", "T", "F", "S", "S"].map((day) => (
-                            <th className="w-full aspect-square inline-flex justify-center items-center">
+                        {["M", "T", "W", "T", "F", "S", "S"].map((day, index) => (
+                            <th key={index} className="w-full aspect-square inline-flex justify-center items-center">
                                 {day}
                             </th>
                         ))}
@@ -148,8 +245,17 @@ export default function Calendar() {
                     {getTableBody()}
                 </tbody>
             </table>
-            <div className="pt-2 text-center border-t border-border-light">
-                No events
+            <div className="w-[70vw] sm:w-full pt-2 border-t border-border-light">
+                <div className="mt-1 mb-4">
+                    {/* <h3 className="font-medium mb-2">Events on {format(selectedDate, "d MMMM")}</h3> */}
+                    {getSelectedDateEvents()}
+                </div>
+                <div>
+                    <h3 className="font-medium mb-2">Upcoming Events</h3>
+                    <div className="max-h-60 overflow-y-auto">
+                        {getUpcomingEvents()}
+                    </div>
+                </div>
             </div>
         </>
     );

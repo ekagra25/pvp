@@ -57,6 +57,7 @@ export default function Home() {
 
     return (
         <div className="relative overflow-hidden -mt-4 sm:mt-0">
+            <Drawer>{renderLeftSection()}</Drawer>
             <div
                 id="home"
                 className={"transition-all origin-left"}
@@ -64,6 +65,7 @@ export default function Home() {
                 <Head>
                     <title>Pranami Vishwa</title>
                     <meta name="description" content="Pranami Vishwa Parishad" />
+                    <meta name="theme-color" content="#FAF5FF" />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
@@ -104,7 +106,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Drawer>{renderLeftSection()}</Drawer>
         </div>
     );
 }

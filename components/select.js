@@ -11,7 +11,7 @@ export default function Select({ options, value, onChange, className }) {
     };
 
     return (
-        <div className="relative shrink overflow-x-clip">
+        <div className="relative flex justify-center min-w-[100px] shrink overflow-x-clip">
             <span
                 className={classNames(
                     "inline-flex justify-center items-center px-2 border border-border-dark",

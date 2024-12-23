@@ -23,7 +23,7 @@ export default function Header() {
     };
 
     return (
-        <header className="min-h-14 flex mb-4 bg-bg-primary shadow-lg origin-bottom-left transition-all ease-out">
+        <header className="sticky top-0 min-h-14 flex mb-4 bg-bg-primary shadow-lg origin-bottom-left transition-all ease-out z-10">
             <div
                 className={classNames(
                     "container w-full py-2 flex z-50",
