@@ -1,0 +1,662 @@
+[
+    {
+        "id": 1,
+        "startDate": "2025-01-01",
+        "endDate": "2025-01-01",
+        "festival": "new year",
+        "locations": [
+            "jamnagar",
+            "panna",
+            "sherpur",
+            "karnal",
+            "kalimpong",
+            "bhiwani",
+            "everywhere"
+        ]
+    },
+    {
+        "id": 2,
+        "startDate": "2025-01-02",
+        "endDate": "2025-01-04",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, kolkata, west bengal"
+        ]
+    },
+    {
+        "id": 3,
+        "startDate": "2025-01-05",
+        "endDate": "2025-01-09",
+        "festival": "mandir opening",
+        "locations": [
+            "shri krishna pranami mandir, ranchi, jharkhand"
+        ]
+    },
+    {
+        "id": 4,
+        "startDate": "2025-01-14",
+        "endDate": "2025-02-14",
+        "festival": "maha kumbh mela",
+        "locations": [
+            "triveni samgam, prayagraj"
+        ]
+    },
+    {
+        "id": 5,
+        "startDate": "2025-01-15",
+        "endDate": "2025-01-15",
+        "festival": "makar sangkranti",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 6,
+        "startDate": "2025-01-20",
+        "endDate": "2025-01-20",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, namfing, sikkim"
+        ]
+    },
+    {
+        "id": 7,
+        "startDate": "2025-01-21",
+        "endDate": "2025-01-23",
+        "festival": "annual festival",
+        "locations": [
+            "shri ramratandas maharaj tapobhumi, songir"
+        ]
+    },
+    {
+        "id": 8,
+        "startDate": "2025-01-23",
+        "endDate": "2025-01-27",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, ekdil, itawah"
+        ]
+    },
+    {
+        "id": 9,
+        "startDate": "2025-01-30",
+        "endDate": "2025-01-03",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, siliguri"
+        ]
+    },
+    {
+        "id": 10,
+        "startDate": "2025-02-03",
+        "endDate": "2025-02-03",
+        "festival": "vasant panchami",
+        "locations": [
+            "shri krishna pranami mandir, bharora"
+        ]
+    },
+    {
+        "id": 11,
+        "startDate": "2025-02-10",
+        "endDate": "2025-02-12",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, juei"
+        ]
+    },
+    {
+        "id": 12,
+        "startDate": "2025-02-11",
+        "endDate": "2025-02-12",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mangal mandir, melbote, nepal"
+        ]
+    },
+    {
+        "id": 13,
+        "startDate": "2025-02-21",
+        "endDate": "2025-02-21",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, kalchini"
+        ]
+    },
+    {
+        "id": 14,
+        "startDate": "2025-02-21",
+        "endDate": "2025-02-23",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, jaigaun"
+        ]
+    },
+    {
+        "id": 15,
+        "startDate": "2025-02-22",
+        "endDate": "2025-02-28",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, chetandham, gangapur"
+        ]
+    },
+    {
+        "id": 16,
+        "startDate": "2025-03-04",
+        "endDate": "2025-03-06",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, shaktinagar, delhi"
+        ]
+    },
+    {
+        "id": 17,
+        "startDate": "2025-03-08",
+        "endDate": "2025-03-14",
+        "festival": "annual festival",
+        "locations": [
+            "shri 108 parayan - shri krishna pranami mandir, kalimpong"
+        ]
+    },
+    {
+        "id": 18,
+        "startDate": "2025-03-08",
+        "endDate": "2025-03-14",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, fulpur, bhaiya"
+        ]
+    },
+    {
+        "id": 19,
+        "startDate": "2025-03-14",
+        "endDate": "2025-03-14",
+        "festival": "holi festival",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 20,
+        "startDate": "2025-03-15",
+        "endDate": "2025-03-15",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, darjeeling"
+        ]
+    },
+    {
+        "id": 21,
+        "startDate": "2025-03-16",
+        "endDate": "2025-03-16",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, mangpoo, (darjeeling)"
+        ]
+    },
+    {
+        "id": 22,
+        "startDate": "2025-03-19",
+        "endDate": "2025-03-19",
+        "festival": "rang panchami",
+        "locations": [
+            "shri krishna pranami mandir, singtam, sikkim"
+        ]
+    },
+    {
+        "id": 23,
+        "startDate": "2025-03-19",
+        "endDate": "2025-03-23",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, kaimri, hariyana"
+        ]
+    },
+    {
+        "id": 24,
+        "startDate": "2025-03-22",
+        "endDate": "2025-03-26",
+        "festival": "annual festival",
+        "locations": [
+            "srhi baba dayaram sahab dham, karnal"
+        ]
+    },
+    {
+        "id": 25,
+        "startDate": "2025-03-30",
+        "endDate": "2025-03-30",
+        "festival": "buddha ji sakha prarambha",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 26,
+        "startDate": "2025-03-31",
+        "endDate": "2025-04-02",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami nijdham, haridwar"
+        ]
+    },
+    {
+        "id": 27,
+        "startDate": "2025-04-02",
+        "endDate": "2025-04-06",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mulmilawa mandir, surat"
+        ]
+    },
+    {
+        "id": 28,
+        "startDate": "2025-04-06",
+        "endDate": "2025-04-06",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, prayagraj"
+        ]
+    },
+    {
+        "id": 29,
+        "startDate": "2025-04-06",
+        "endDate": "2025-04-06",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, niyabaram, sikkim"
+        ]
+    },
+    {
+        "id": 30,
+        "startDate": "2025-04-06",
+        "endDate": "2025-04-14",
+        "festival": "annual festival",
+        "locations": [
+            "shri 108 parayan- shri krishna pranami mandir muktidham, ithari, nepal"
+        ]
+    },
+    {
+        "id": 31,
+        "startDate": "2025-04-10",
+        "endDate": "2025-04-12",
+        "festival": "annual festival",
+        "locations": [
+            "shri 5 mahamangalpuri dham, surat"
+        ]
+    },
+    {
+        "id": 32,
+        "startDate": "2025-04-11",
+        "endDate": "2025-04-13",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, pulbangush, delhi"
+        ]
+    },
+    {
+        "id": 33,
+        "startDate": "2025-04-11",
+        "endDate": "2025-04-13",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, jaipur"
+        ]
+    },
+    {
+        "id": 34,
+        "startDate": "2025-04-12",
+        "endDate": "2025-04-12",
+        "festival": "baijuraj jayanti",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 35,
+        "startDate": "2025-04-13",
+        "endDate": "2025-04-15",
+        "festival": "annual festival",
+        "locations": [
+            "shri pitambarpeeth dham, rangchali, assam"
+        ]
+    },
+    {
+        "id": 36,
+        "startDate": "2025-04-29",
+        "endDate": "2025-04-05",
+        "festival": "annual festival",
+        "locations": [
+            "shri nijanand ashram, sherpur"
+        ]
+    },
+    {
+        "id": 37,
+        "startDate": "2025-04-30",
+        "endDate": "2025-04-30",
+        "festival": "akshya tritiya",
+        "locations": [
+            "shri krishna pranami mandir, salakpur, nepal"
+        ]
+    },
+    {
+        "id": 38,
+        "startDate": "2025-05-01",
+        "endDate": "2025-05-01",
+        "festival": "mangal memorial festival",
+        "locations": [
+            "shri krishna pranami mandir, mumbai"
+        ]
+    },
+    {
+        "id": 39,
+        "startDate": "2025-05-05",
+        "endDate": "2025-05-05",
+        "festival": "shri baijuraj dhamgaman",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 40,
+        "startDate": "2025-05-06",
+        "endDate": "2025-05-12",
+        "festival": "annual festival",
+        "locations": [
+            "mukunddham, malihabad"
+        ]
+    },
+    {
+        "id": 41,
+        "startDate": "2025-05-09",
+        "endDate": "2025-05-09",
+        "festival": "mangal memorial festival",
+        "locations": [
+            "mangaldham, kalimpong"
+        ]
+    },
+    {
+        "id": 42,
+        "startDate": "2025-05-17",
+        "endDate": "2025-05-17",
+        "festival": "radhikadas memorial festival",
+        "locations": [
+            "pranami mandir, bhiwani"
+        ]
+    },
+    {
+        "id": 43,
+        "startDate": "2025-05-29",
+        "endDate": "2025-05-29",
+        "festival": "shri chhatrasal jayanti",
+        "locations": [
+            "delhi",
+            "jaipur",
+            "everywhere"
+        ]
+    },
+    {
+        "id": 44,
+        "startDate": "2025-07-10",
+        "endDate": "2025-07-10",
+        "festival": "guru purnima festival",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 45,
+        "startDate": "2025-07-13",
+        "endDate": "2025-07-14",
+        "festival": "teej chuth fasting",
+        "locations": [
+            "shri ji dhamgaman"
+        ]
+    },
+    {
+        "id": 46,
+        "startDate": "2025-07-15",
+        "endDate": "2025-07-15",
+        "festival": "bitak katha start",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 47,
+        "startDate": "2025-07-24",
+        "endDate": "2025-07-24",
+        "festival": "maha guru shri pitambardas memorial festival",
+        "locations": [
+            "pitambarpeeth dham, kalimpong"
+        ]
+    },
+    {
+        "id": 48,
+        "startDate": "2025-07-29",
+        "endDate": "2025-08-01",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami nijanand dham, rohini, delhi"
+        ]
+    },
+    {
+        "id": 49,
+        "startDate": "2025-08-09",
+        "endDate": "2025-08-09",
+        "festival": "raksha bandhan - shri prannath ji and shri chhatrasal milap",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 50,
+        "startDate": "2025-08-11",
+        "endDate": "2025-08-14",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, birapada"
+        ]
+    },
+    {
+        "id": 51,
+        "startDate": "2025-08-16",
+        "endDate": "2025-08-17",
+        "festival": "shri krishna janmastami, nandotsav badhai",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 52,
+        "startDate": "2025-08-22",
+        "endDate": "2025-08-22",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, gobindpur, UP"
+        ]
+    },
+    {
+        "id": 53,
+        "startDate": "2025-08-28",
+        "endDate": "2025-08-31",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, paramdham, vrindavan"
+        ]
+    },
+    {
+        "id": 54,
+        "startDate": "2025-08-31",
+        "endDate": "2025-08-31",
+        "festival": "shri radha astami",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 55,
+        "startDate": "2025-09-06",
+        "endDate": "2025-09-06",
+        "festival": "satguru shri devchandra ji dhamgaman",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 56,
+        "startDate": "2025-09-07",
+        "endDate": "2025-09-09",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, shri ganganagar"
+        ]
+    },
+    {
+        "id": 57,
+        "startDate": "2025-09-15",
+        "endDate": "2025-09-21",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, hakikat nagar, delhi"
+        ]
+    },
+    {
+        "id": 58,
+        "startDate": "2025-09-19",
+        "endDate": "2025-09-21",
+        "festival": "annual festival",
+        "locations": [
+            "shri 5 navtanpuri dham, jamnagar"
+        ]
+    },
+    {
+        "id": 59,
+        "startDate": "2025-09-19",
+        "endDate": "2025-09-21",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, jaipur"
+        ]
+    },
+    {
+        "id": 60,
+        "startDate": "2025-09-20",
+        "endDate": "2025-09-20",
+        "festival": "shri prannath jayanti",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 61,
+        "startDate": "2025-10-02",
+        "endDate": "2025-10-02",
+        "festival": "dasahara",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 62,
+        "startDate": "2025-10-04",
+        "endDate": "2025-10-04",
+        "festival": "mangal jayanti",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 63,
+        "startDate": "2025-10-05",
+        "endDate": "2025-10-05",
+        "festival": "satguru jayanti",
+        "locations": [
+            "shri 5 padmawatipuri dham, panna",
+            "navatandham, kathmandu",
+            "everywhere"
+        ]
+    },
+    {
+        "id": 64,
+        "startDate": "2025-10-06",
+        "endDate": "2025-10-06",
+        "festival": "sarad purnima festival",
+        "locations": [
+            "shri 5 padmawatipuri dham, panna",
+            "shri krishna pranami mandir, eichhe"
+        ]
+    },
+    {
+        "id": 65,
+        "startDate": "2025-10-20",
+        "endDate": "2025-10-22",
+        "festival": "dipawali, annakut, govardhan pooja",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 66,
+        "startDate": "2025-10-27",
+        "endDate": "2025-10-30",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, bhiwani"
+        ]
+    },
+    {
+        "id": 67,
+        "startDate": "2025-11-03",
+        "endDate": "2025-11-09",
+        "festival": "annual festival",
+        "locations": [
+            "shri 125 parayan- shri krishna pranami nijdarwar, chandigarh"
+        ]
+    },
+    {
+        "id": 68,
+        "startDate": "2025-11-05",
+        "endDate": "2025-11-05",
+        "festival": "prithivi parikrama",
+        "locations": [
+            "panna",
+            "everywhere"
+        ]
+    },
+    {
+        "id": 69,
+        "startDate": "2025-11-29",
+        "endDate": "2025-11-29",
+        "festival": "milap festival - shri devchandra ji and prannth ji",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 70,
+        "startDate": "2025-12-07",
+        "endDate": "2025-12-07",
+        "festival": "shri chhtrasal dhamgaman",
+        "locations": [
+            "everywhere"
+        ]
+    },
+    {
+        "id": 71,
+        "startDate": "2025-12-11",
+        "endDate": "2025-12-17",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, matiyari, lucknow"
+        ]
+    },
+    {
+        "id": 72,
+        "startDate": "2025-12-30",
+        "endDate": "2025-12-30",
+        "festival": "annual festival",
+        "locations": [
+            "shri krishna pranami mandir, kalijhora, west bengal"
+        ]
+    }
+]
